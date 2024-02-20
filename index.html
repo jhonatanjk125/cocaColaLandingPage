@@ -6,6 +6,11 @@
     <title>Coca cola</title>
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/main.js" type="module" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
     <section>
@@ -30,12 +35,61 @@
           </p>
           <a href="#">Learn More</a>
         </div>
+        <div class="imgBox">
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="storage/img/cocacola1.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="storage/img/cocacola2.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="storage/img/cocacola3.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="storage/img/cocacola4.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="storage/img/cocacola5.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="storage/img/cocacola6.png" />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <ul class="sci">
-        <li><a href="#"><img src="storage/img/facebook.png" alt=""></a></li>
-        <li><a href="#"><img src="storage/img/twitter.png" alt=""></a></li>
-        <li><a href="#"><img src="storage/img/instagram.png" alt=""></a></li>
+        <li>
+          <a href="#"><img src="storage/img/facebook.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="storage/img/twitter.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="storage/img/instagram.png" alt="" /></a>
+        </li>
       </ul>
     </section>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
   </body>
 </html>
