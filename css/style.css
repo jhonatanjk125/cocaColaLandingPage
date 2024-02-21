@@ -189,4 +189,44 @@ header .navigation li a {
   header .navigation {
     display: none;
   }
+
+  .toggle {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-image: url(../storage/img/menu.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    z-index: 10000;
+  }
+  .toggle.active {
+    position: fixed;
+    right: 40px;
+    background-image: url(../storage/img/close.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  header .navigation.active {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #e51e2a;
+    z-index: 1000;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header .navigation li a {
+    margin: 10px 0;
+    font-size: 2.5em;
+    font-weight: 300;
+  }
 }
