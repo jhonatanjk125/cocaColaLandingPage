@@ -54,6 +54,7 @@ header .navigation li {
 }
 
 header .navigation li a {
+  padding: 0px 30px;
   display: inline-block;
   color: #fff;
   font-weight: 500;
@@ -143,8 +144,8 @@ header .navigation li a {
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 300px;
-  height: 300px;
+  width: 180px;
+  height: 500px;
   display: flex;
   justify-content: center;
 }
@@ -160,7 +161,32 @@ header .navigation li a {
 }
 
 .swiper-slide img {
-    position: absolute;
-    bottom: 0;
-    max-height: 100%;
+  position: absolute;
+  bottom: 0;
+  max-height: 100%;
+}
+
+@media (max-width: 991px) {
+  header {
+    padding: 40px;
+  }
+  section {
+    padding: 150px 40px;
+  }
+  .sci {
+    left: 40px;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .content .textBox,
+  .content .imgBox {
+    max-width: 100%;
+  }
+  .swiper-slide {
+    height: 300px;
+  }
+  header .navigation {
+    display: none;
+  }
 }
