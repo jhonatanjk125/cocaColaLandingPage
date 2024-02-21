@@ -182,6 +182,7 @@ header .navigation li a {
   .content .textBox,
   .content .imgBox {
     max-width: 100%;
+    padding-bottom: 50px;
   }
   .swiper-slide {
     height: 300px;
