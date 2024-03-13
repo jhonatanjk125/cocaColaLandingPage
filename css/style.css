@@ -150,6 +150,10 @@ header .navigation li a {
   justify-content: center;
 }
 
+.swiper-slide img {
+  max-height: 300px;
+}
+
 .content .imgBox {
     width: 600px;
     display: flex;
